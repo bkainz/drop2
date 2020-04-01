@@ -35,6 +35,9 @@ RUN mkdir /home/build
 RUN cd /home/build && THIRD_PARTY_DIR=/3rdparty cmake ..
 RUN cd /home/build && THIRD_PARTY_DIR=/3rdparty make -j4
 
+# Make alias for dropreg
+RUN echo "alias dropreg=/home/build/drop/apps/dropreg/dropreg" >> ~/.bashrc
+
 # Make input and output directories
 RUN mkdir /home/input
 RUN mkdir /home/output
