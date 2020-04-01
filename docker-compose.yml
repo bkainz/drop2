@@ -1,0 +1,12 @@
+version: '3'
+services:
+  drop2:
+    build: ./
+    container_name: drop2
+    hostname: drop2
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./docker_input/:/home/input
+      - ./docker_output/:/home/output
+    command: tail -F anything #keep container running

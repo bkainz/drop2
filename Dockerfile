@@ -34,3 +34,7 @@ COPY / /home/
 RUN mkdir /home/build
 RUN cd /home/build && THIRD_PARTY_DIR=/3rdparty cmake ..
 RUN cd /home/build && THIRD_PARTY_DIR=/3rdparty make -j4
+
+# Make input and output directories
+RUN mkdir /home/input
+RUN mkdir /home/output
