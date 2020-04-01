@@ -40,6 +40,12 @@ If you make use of *drop2*, it would be great if you cite one of these papers in
 * [Boost](http://www.boost.org/) (tested up to v1.58)
 * [ITK](http://itk.org) (tested up to [v4.13.2](https://sourceforge.net/projects/itk/files/itk/4.13/InsightToolkit-4.13.2.tar.gz))
 
+## Docker
+
+```
+docker-compose up
+```
+
 ## Build instructions
 
 Eigen is a header-only library and can be simply installed via:
